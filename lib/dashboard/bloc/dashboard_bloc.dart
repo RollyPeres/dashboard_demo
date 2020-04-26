@@ -32,6 +32,6 @@ class DashboardBloc extends Bloc<DashboardEvent, DashboardState> {
       Future.delayed(const Duration(milliseconds: 600), () => 'sales data'),
     ]);
     print(data);
-    yield DashboardLoaded([...data]);
+    yield DashboardLoaded(data);
   }
 }
